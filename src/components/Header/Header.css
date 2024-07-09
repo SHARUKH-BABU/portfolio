@@ -15,7 +15,7 @@
     justify-content: center;
     gap: 20px;
 }
-#heeader .intro_text{
+#header .intro_text{
     font-style: 200px;
     position: absolute;
     top: 120px;
@@ -76,6 +76,14 @@
     position: relative;
     margin: auto;
     overflow: hidden;
+}
+#header .profile_photo{
+    height: 500px;
+    border-radius: 50%;
+    transform: scaleX(1.4);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    background: var(--color-ui-1);
 }
 #header .profile_photo_container::after{
     position: absolute;

@@ -1,6 +1,14 @@
 #about{
     background: var(--color-ui-2);
 }
+img{
+    background: rgba(var(--card-rgb), 0.1);
+}
+img:hover{
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: default;
+}
 #about .about_container{
     display: grid;
     grid-template-columns: 400px auto;

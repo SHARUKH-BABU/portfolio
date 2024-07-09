@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.css"
-import {profile1, profile2, profile3, profile4, profile5, profile6} from "../../images"
+import {profile1} from "../../images"
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <div className="column intro_container blur-effect">
           <div className="header_info">
             <div className="header_info_top">
-              Hello There! I'm <span className="color_primary">Shaik SharukhBabu</span>
+              Hello There! I'm <span className="color_primary">SHAIK SHARUKHBABU</span>
             </div>
             <div className="header_info_middle">
               <h1 className="primary_title header_title">I'M A WEB DEVELOPER</h1>

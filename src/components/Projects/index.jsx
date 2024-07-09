@@ -8,7 +8,6 @@ const tabs = [
   { name: "All" },
   { name: "Web" },
   { name: "UI/UX" },
-  { name: "Apps" },
 ];
 
 const Projects = () => {

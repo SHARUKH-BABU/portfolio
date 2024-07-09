@@ -1,28 +1,28 @@
-#skill .skill_container{
+#skills .skill_container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
 }
 
 @media (max-width: 1024px){
-    #skill .skill_container{
+    #skills .skill_container{
         grid-template-columns: 1fr;
     }
-    #skill .skill_container  .skill_card{
+    #skills .skill_container  .skill_card{
         width: 80%;
         padding: 2rem;
         margin: 0 auto;
     }
-    #skill .skill_content{
+    #skills .skill_content{
         padding: 1rem;
     }
 }
 
 @media (max-width: 600px){
-    #skill .skill_container{
+    #skills .skill_container{
         gap: 1rem;
     }
-    #skill .skill_container  .skill_card{
+    #skills .skill_container  .skill_card{
         width: 100%;
         padding: 2rem 1rem;
     }

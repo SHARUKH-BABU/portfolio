@@ -5,7 +5,7 @@ import SkillCard from "./SkillCard";
 
 const Skills = () => {
   return (
-    <section id="skill">
+    <section id="skills">
       <div className="section_wrapper">
         <div className="section_header center">
           <h2 className="primary_title">My Skills</h2>
