@@ -1,0 +1,129 @@
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background: var(--color-ui-2);
+  }
+  
+  .contact_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  
+  .section_header {
+    text-align: center;
+    max-width: 600px;
+  }
+
+  
+  .contact_group {
+    display: grid;
+    grid-template-columns: 45% 50%;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .contact_options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact_option {
+    background: rgba(var(--card-rgb), 0.1);
+    border-radius: var(--border-radius-3);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: background 200ms, border 200ms;
+  }
+  
+  .contact_option:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+  }
+  
+  .contact_icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .contact_option h3 {
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .contact_option h5 {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #777;
+  }
+  
+  .contact_option a {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: var(--gradient-1);
+    color : var(--color-white);
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+  }
+  
+  .contact_option a:hover {
+    background-color: #5e9ee3;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(var(--card-rgb), 0.1);
+    border-radius: var(--border-radius-3);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: var(--border-radius-3);
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    resize: none;
+    color: var(--color-white);
+}
+
+input:focus, textarea:focus {
+    border-color: var(--color-primary);
+}
+  
+  
+  .btn_primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .contact_group {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .primary_title {
+      font-size: 2rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+    }
+  }
+  

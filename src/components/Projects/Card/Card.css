@@ -1,0 +1,191 @@
+/* Base styles for .card */
+.card {
+    padding: 0;
+    border-radius: var(--border-radius-3);
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    transition: background 200ms, border 200ms;
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: zoomIn 400ms;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        background: rgba(var(--card-rgb), 0.14);
+    }
+    .card:hover span {
+        display: inline-block;
+        transform: translateY(4px);
+    }
+}
+
+.card span {
+    display: inline;
+    transition: transform 200ms;
+}
+
+.card .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.card .picture {
+    height: 250px;
+    overflow: hidden;
+}
+
+.card .card_details {
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card .card_details .card_details_top {
+    border: none;
+}
+
+.card .card_details .card_details_middle {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(var(--card-border-rgb), 0.15);
+    height: 160px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scrollbar-width: none; /* For Firefox */
+}
+
+.card .card_details .card_details_middle::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.card .card_details .card_details_bottom {
+    padding: 1rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.card .stack_container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.card .stack_container .stack_left {
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    padding: 0 0.5rem;
+    border-radius: var(--border-radius-2);
+    background: rgba(var(--card-rgb), 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.card .stack_container .stack_right {
+    flex: 1;
+}
+
+.card .stack_container .stack_right .stack_box_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.card .stack_container .stack_right .stack_box_container .stack_box .stack_icon_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.card .stack_container .stack_right .stack_box_container .stack_box .stack_icon_container .stack_icon {
+    display: flex;
+    align-items: center;
+}
+
+.card .stack_container .stack_right .stack_box,
+.card .stack_view_more {
+    border-radius: var(--border-radius-2);
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+
+.card .stack_view_more {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card .stack_view_more .stack_expand_box {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    padding: 2rem 1rem;
+    background: var(--color-ui-2);
+    border-radius: var(--border-radius-2);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: none;
+}
+
+.card .stack_view_more .open_stack_expand_box {
+    display: block;
+}
+
+.card .stack_view_more .stack_expand_box .title {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button_container {
+    margin-top: 20px;
+}
+
+.card .button_container .btn_share {
+    border: 1px solid transparent !important;
+    transition: var(--transition);
+    width: 2.5rem;
+    aspect-ratio: 1 / 2;
+    border-radius: var(--border-radius-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card .button_container .btn_share:hover {
+    background: rgba(var(--card-rgb), 0.1);
+    border-color: rgba(var(--card-border-rgb), 0.15) !important;
+}
+
+/* Media query for small devices (up to 768px) */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%; /* Cards take full width */
+        height: auto; /* Cards adjust height automatically */
+        margin-bottom: 1rem; /* Add some space between cards */
+    }
+}
