@@ -25,7 +25,7 @@ export const projects = [
       category:"Web",
       data:{
         description:`Experience the joy of music at your fingertips with our innovative Sing with Me web application. Seamlessly explore and play your favorite tracks with user-friendly navigation, secure authentication, and personalized playlists. Enjoy a modern interface that prioritizes convenience and accessibility, ensuring an immersive music experience for every user.`,
-        demoLink: "sing-with-me-4953.onrender.com/",
+        demoLink: "https://sing-with-me-4953.onrender.com/",
       },
       stack:[
         {

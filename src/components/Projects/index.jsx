@@ -71,7 +71,7 @@ const Projects = () => {
               img={project.image}
               data={project.data}
               stack={project.stack}
-              demoLink={project.demoLink}
+              demoLink={project.data.demoLink}
               key={index}
             />
           ))}
