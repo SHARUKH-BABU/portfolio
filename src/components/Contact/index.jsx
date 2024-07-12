@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Contact.css";
-import {MdOutlineEmail} from "react-icons/md"
+import { MdOutlineEmail } from "react-icons/md";
 import { BsWhatsapp } from 'react-icons/bs';
 
 const Contact = () => {
@@ -28,7 +28,7 @@ const Contact = () => {
               <BsWhatsapp className='contact_icon'/>
               <h3>WhatsApp</h3>
               <h5>+91 6301270325</h5>
-              <a href="https://api.whatsapp.com/send?phone=6301270325" target='_blank' className='btn'>Send a message</a>
+              <a href="https://api.whatsapp.com/send?phone=916301270325" target='_blank' className='btn'>Send a message</a>
             </article>
           </div>
 
@@ -45,4 +45,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

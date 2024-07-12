@@ -2,7 +2,7 @@ import {FaNodeJs} from "react-icons/fa";
 import {SiExpress,SiMongodb} from "react-icons/si";
 import { AiFillGithub,AiFillLinkedin,AiFillFacebook } from "react-icons/ai";
 import { CgFigma } from "react-icons/cg";
-import {spotifyThumbnail, memorygameThumbnail} from "./images"
+import {spotifyThumbnail, memorygameThumbnail, ui_ux_design} from "./images"
 import { DiHtml5 } from "react-icons/di";
 import { IoLogoCss3 } from "react-icons/io5";
 import { IoLogoJavascript } from "react-icons/io";
@@ -77,12 +77,12 @@ export const projects = [
     },
     {
       id:5,
-      title: 'Mobile bank - App Design',
-      image: 'https://i.pinimg.com/originals/a0/be/c3/a0bec3706210e6ab28470eee95bf5889.png',
+      title: 'Juice Haven',
+      image: ui_ux_design,
       category:"UI/UX",
       data:{
-        description: `Experience banking at your fingertips with our sleek Mobile Bank app design. Seamlessly manage your finances on-the-go with intuitive navigation, secure transactions, and personalized insights. Enjoy a modern interface that prioritizes convenience and accessibility, revolutionizing your banking experience.`,
-        demoLink: "https://google.com/",
+        description: `Juice Haven is a beautifully designed web app offering an exceptional juice ordering experience. The app features a clean and intuitive nav bar that guides users through the various sections. The home page captivates visitors with vibrant images of the top juice offerings, enticing them to explore more.`,
+        demoLink: "https://www.figma.com/design/MbBtyTxN6TEbc78MhHR5ha/Untitled?node-id=0-1&t=s3G47rGNGiJbqsxw-1",
       },
       stack:[
         {
