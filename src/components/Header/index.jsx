@@ -19,7 +19,9 @@ const Header = () => {
               </p>
             </div>
             <div className="header_info_bottom">
-              <button className="btn">Download CV</button>
+              <a href="./sharukh-resume.pdf" className="btn" target='_blank'>
+                My Resume
+              </a>
               <a href="mailto:sharukhbabushaik@gmail.com" className="btn">Email Me</a>
             </div>
           </div>

@@ -1,35 +1,12 @@
-/* Base styles for .card */
 .card {
-    padding: 0;
+    padding: 20px 20px;
+    border: 1px solid transparent;
+    transition: var(--transition);
     border-radius: var(--border-radius-3);
     background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-    transition: background 200ms, border 200ms;
-    overflow: hidden;
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
-    justify-content: space-between;
-    animation: zoomIn 400ms;
-}
-
-@keyframes zoomIn {
-    0% {
-        transform: scale(0.7);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@media (hover: hover) and (pointer: fine) {
-    .card:hover {
-        background: rgba(var(--card-rgb), 0.14);
-    }
-    .card:hover span {
-        display: inline-block;
-        transform: translateY(4px);
-    }
+    min-width: 300px; /* Minimum width for the card */
+    animation: zoomIn 0.5s ease 400ms;
+    margin: 20px;
 }
 
 .card span {
@@ -48,6 +25,18 @@
     overflow: hidden;
 }
 
+
+.card:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+    cursor: default;
+}
+
+.card .picture img {
+    width: 100%;
+    border-radius: var(--border-radius-3);
+}
+
 .card .card_details {
     flex: 1;
     text-align: left;
@@ -57,8 +46,21 @@
     flex-direction: column;
 }
 
-.card .card_details .card_details_top {
-    border: none;
+.card .card_details_top {
+    text-align: center;
+}
+
+.card .card_details_top .title {
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.card .card_details_middle .description {
+    color: var(--text-muted);
+}
+
+.card .card_details_bottom {
+    margin-top: 2rem;
 }
 
 .card .card_details .card_details_middle {
@@ -76,8 +78,8 @@
 
 .card .card_details .card_details_bottom {
     padding: 1rem 0;
-    flex: 1;
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between; 
 }
@@ -181,11 +183,106 @@
     border-color: rgba(var(--card-border-rgb), 0.15) !important;
 }
 
-/* Media query for small devices (up to 768px) */
-@media only screen and (max-width: 1000px) {
-    .card {
-        width: 100%; /* Cards take full width */
-        height: auto; /* Cards adjust height automatically */
-        margin-bottom: 1rem; /* Add some space between cards */
+
+.card .stack_container .stack_right .stack_box_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+}
+
+.card .stack_container .stack_right .stack_box_container .stack_box .stack_icon_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 14px;
+    padding: 0.5rem;
+}
+
+.card .stack_container .stack_right .stack_box_container .stack_box .stack_icon_container .stack_icon {
+    display: flex;
+    align-items: center;
+}
+
+.card .stack_container .stack_right .stack_box,
+.card .stack_view_more {
+    border-radius: var(--border-radius-2);
+    background: rgba(var(--card-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+
+.card .stack_view_more {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin-top: 1rem;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.card .stack_view_more .stack_expand_box {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    padding: 2rem 1rem;
+    background: var(--color-ui-2);
+    border-radius: var(--border-radius-2);
+    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: none;
+}
+
+.card .stack_view_more .open_stack_expand_box {
+    display: block;
+}
+
+.card .stack_view_more .stack_expand_box .title {
+    margin-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button_container {
+    margin-top: 20px;
+}
+.card .btn {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-3);
+    transition: var(--transition);
+}
+
+.card .btn:hover {
+    background-color: var(--color-primary-dark);
+}
+
+@media (max-width: 350px) {
+    .card .stack_name {
+        font-size: 12px;
+    }
+    .card .btn {
+        font-size: 12px;
+        padding: 0.5rem 0.5rem;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.7);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        background: rgba(var(--card-rgb), 0.14);
+    }
+    .card:hover span {
+        display: inline-block;
+        transform: translateY(4px);
     }
 }

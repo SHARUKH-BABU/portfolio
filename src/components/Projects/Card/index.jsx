@@ -39,7 +39,7 @@ const Card = ({ img, title, data, stack, demoLink }) => {
             </div>
           </div>
           <div className="button_container">
-            <a href={demoLink} target='_blank' className="btn btn_primary" rel="noopener noreferrer">Demo</a>
+            <a href={demoLink} target='_blank' className="btn btn_primary letters_spacing" rel="noopener noreferrer">Demo</a>
           </div>
         </div>
       </div>

@@ -36,9 +36,12 @@ const Navbar = () => {
         ))}
       </div>
       <div className="nav_buttons_group">
-        <button className="btn btn_primary">
+        <Link className="btn btn_primary" to="contact" spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}>
           HIRE ME <FaArrowUpRightFromSquare />
-        </button>
+        </Link>
         <FaBarsStaggered className="menu" onClick={() => setShowSidebar(!showSidebar)} />
       </div>
     </nav>
