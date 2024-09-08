@@ -2,12 +2,14 @@
     background: var(--color-ui-2);
 }
 img{
-    background: rgba(var(--card-rgb), 0.1);
+    border-color: var(--color-primary);
 }
 img:hover{
     background: transparent;
-    border-color: var(--color-primary);
+    background: rgba(var(--card-rgb), 0.1);
     cursor: default;
+    scale: 1.05;
+    transition: ease 1s;
 }
 #about .about_container{
     display: grid;

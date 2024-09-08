@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.css"
-import {profile1} from "../../images"
+import {prof} from "../../images"
 
 const Header = () => {
   return (
@@ -28,7 +28,7 @@ const Header = () => {
         </div>
         <div className="column">
           <div className="profile_photo_container">
-            <img src={profile1} alt="my profile pic" className="profile_photo" />
+            <img src={prof} alt="my profile pic" className="profile_photo" />
           </div>
         </div>
       </div>
