@@ -212,7 +212,7 @@ export const socialHandles = [
   {
     name:"LinkedIn",
     icon:<AiFillLinkedin/>,
-    link:"https://www.linkedin.com/in/shaik-sharukhbabu-80a52a281/",
+    link:"https://www.linkedin.com/in/shaik-sharukhbabu/",
   },
   {
     name:"FaceBook",
