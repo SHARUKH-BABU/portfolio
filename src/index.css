@@ -215,3 +215,15 @@ img{
         text-align: center;
     }
 }
+#cursor-follow{
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-radius: 50%;
+    border : 1px solid white;
+    position: absolute;
+    z-index: 100;
+    box-shadow: 0 0 10px white,
+                0 0 15px white
+                                ;
+}

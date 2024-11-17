@@ -1,5 +1,7 @@
+
 #about{
     background: var(--color-ui-2);
+    overflow: hidden;
 }
 img{
     border-color: var(--color-primary);
@@ -34,6 +36,8 @@ img:hover{
 }
 #about .photo_container:hover{
     transform: rotate(0);
+    background-color: #110626;
+    border-color: gray;
 }
 #about .btn{
     margin-top: 30px;
